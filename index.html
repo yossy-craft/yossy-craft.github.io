@@ -4,48 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>yossy-craft</title>
-  <meta name="description" content="Yossy が作った Windows 用の便利ツールを無料で配布しています。">
+  <meta name="description" content="Yossy が自分用に作った Windows のツールを置いています。">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">
-        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4a7dff"/><path d="M9 9l7 8 7-8M16 17v7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        yossy-craft
-      </a>
-      <nav class="site-nav">
-        <a href="/#tools">ツール</a>
-      </nav>
-    </div>
-  </header>
+  <div class="wrap">
+    <header class="site"><a href="/">yossy-craft</a></header>
 
-  <main class="wrap">
-    <section class="hero">
-      <h1>自分で使うために作った道具を、<br>おすそわけ。</h1>
-      <p class="lead">Yossy が作った Windows 用のツールを置いています。どれも無料で使えます。</p>
-    </section>
+    <main>
+      <h1>yossy-craft</h1>
+      <p>Yossy です。仕事や家で使う Windows のちょっとした道具を、自分用に作っています。そのうち、ほかの人にも使ってもらえそうなものをここに置いています。どれも無料です。</p>
 
-    <section id="tools">
       <h2>ツール</h2>
-      <div class="tool-list">
-        <a class="card tool-card" href="/screenpen/">
-          <div class="tool-head">
-            <img src="/assets/img/screenpen/logo.png" alt="" width="52" height="52">
-            <div>
-              <h3>ScreenPen</h3>
-              <span class="tag">Windows</span><span class="tag">無料</span>
-            </div>
+      <ul class="tools">
+        <li>
+          <img src="/assets/img/screenpen/logo.png" alt="" width="44" height="44">
+          <div>
+            <a class="name" href="/screenpen/">ScreenPen</a><span class="ver">0.8.0</span>
+            <p>画面の上にペンで書き込めるツール。画面共有やプレゼンで、指し示したいところに丸を付けたりするのに使っています。</p>
           </div>
-          <p>画面の上にそのままペンで書き込めるツール。プレゼンや画面共有の説明に。お絵かき用のペイントもついています。</p>
-        </a>
-      </div>
-    </section>
-  </main>
+        </li>
+        <li>
+          <img src="/assets/img/tablauncherx2/logo.png" alt="" width="44" height="44">
+          <div>
+            <a class="name" href="/tablauncherx2/">TabLauncherX2</a><span class="ver">1.3.1</span>
+            <p>よく開くフォルダやサイトをボタンにしておけるランチャー。フォルダはエクスプローラーの新しいタブで開きます。</p>
+          </div>
+        </li>
+      </ul>
+    </main>
 
-  <footer class="site-footer">
-    <div class="wrap">© yossy-craft</div>
-  </footer>
+    <footer class="site">© yossy-craft</footer>
+  </div>
 </body>
 </html>

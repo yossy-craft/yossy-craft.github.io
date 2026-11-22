@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TabLauncherX2 | yossy-craft</title>
+  <meta name="description" content="よく開くフォルダやサイトをボタンにしておける Windows 11 用の無料ランチャー。フォルダはエクスプローラーの新しいタブで開きます。">
+  <link rel="icon" href="/assets/img/tablauncherx2/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site"><span class="crumb"><a href="/">yossy-craft</a> /</span> TabLauncherX2</header>
+
+    <main>
+      <div class="title">
+        <img src="/assets/img/tablauncherx2/logo.png" alt="" width="48" height="48">
+        <h1>TabLauncherX2</h1>
+      </div>
+      <p>よく開くフォルダやファイル、Webサイトをボタンにしておけるランチャーです。フォルダは、開いているエクスプローラーの新しいタブで開きます。</p>
+
+      <figure>
+        <img src="/assets/img/tablauncherx2/main.png" alt="TabLauncherX2 の画面。グループごとにフォルダやファイル、Webサイトのボタンが並んでいる" width="1060" height="380">
+        <figcaption>ボタンはグループにまとめて、上のタブでページを分けられます（画面のボタンは見本です）。</figcaption>
+      </figure>
+
+      <div class="download">
+        <a class="button" href="https://github.com/yossy-craft/tablauncherx2/releases/latest/download/TabLauncherX2.zip">TabLauncherX2.zip をダウンロード</a>
+        <span class="sub">バージョン 1.3.1 ・ 約20MB ・ Windows 11</span>
+      </div>
+
+      <h2>どんなツールか</h2>
+      <p>もともと C# で作って使っていたランチャーを、Python で作り直したものです。フォルダをたくさん開くと、エクスプローラーのウィンドウがどんどん増えてしまうのが困りごとでした。TabLauncherX2 から開くと、いま開いているエクスプローラーにタブが増えていくので、ウィンドウは1つのままです。</p>
+      <ul>
+        <li>フォルダは、エクスプローラーが開いていれば新しいタブで、開いていなければ新しいウィンドウで開きます。</li>
+        <li>ファイルはいつものアプリで、URL はいつものブラウザで開きます。</li>
+        <li>エクスプローラーからフォルダやファイルをドラッグして落とすと、そのままボタンになります。</li>
+        <li>ボタンはドラッグで並べ替えられます。右クリックで編集・コピー・削除ができます。</li>
+        <li>ふだんはタスクトレイにしまっておけます。設定した組み合わせキー（<kbd>Ctrl</kbd>+<kbd>Alt</kbd> など）を押すと、マウスのある画面の真ん中に出てきます。</li>
+        <li>色はダーク5種・ライト3種から選べます。</li>
+      </ul>
+
+      <h2>使い方</h2>
+      <ol>
+        <li>ダウンロードした zip を展開し、中の <code>TabLauncherX2</code> フォルダを好きな場所に置きます。インストールはいりません。</li>
+        <li>フォルダの中の <code>TabLauncherX2.exe</code> をダブルクリックで起動します。<code>_internal</code> フォルダも動かすのに必要なので、exe だけ取り出さずフォルダごと使ってください。</li>
+        <li>グループ名の右の「＋」でボタンを追加します。名前と、開きたいフォルダのパスや URL を入れます。</li>
+        <li>右上の「設定」で、列の数・文字の大きさ・色・呼び出すキーなどを変えられます。</li>
+        <li>終わるときは、タスクトレイのアイコンを右クリックして「終了」を選びます。</li>
+      </ol>
+
+      <h2>知っておいてほしいこと</h2>
+      <div class="note">
+        <p><strong>エクスプローラーの設定を1つ変えます。</strong>起動するたびに、エクスプローラーを開いたときの最初の画面を「ホーム」から「PC」に変えています（Windows 11 のホーム画面は表示が重いためです）。元に戻したいときは、エクスプローラーの「…」→「オプション」→「エクスプローラーで開く」を「ホーム」にしてください。</p>
+      </div>
+      <ul>
+        <li>タブは、エクスプローラーにキー操作（新しいタブ → アドレス欄に入力）を送って開いています。PC が忙しいとうまく開けないことがあります。そのときは、設定の「タブを開く待ち時間」を遅い側にしてみてください。</li>
+        <li>はじめて起動すると「Windows によって PC が保護されました」と出ることがあります。exe に電子署名を付けていないためです。「詳細情報」→「実行」で起動します。</li>
+        <li>ボタンの中身は、フォルダの中の <code>savedata_user</code> に保存しています。やめるときはフォルダごと消せば終わりです。</li>
+      </ul>
+
+      <h2>更新履歴</h2>
+      <table>
+        <tr><td>1.3.1（2026-07-22）</td><td>設定画面から呼び出すキーを変えると、いつも失敗していたのを直しました。キーの組み合わせに Alt+Win などを足しました。</td></tr>
+        <tr><td>1.3.0（2026-07-21）</td><td>タブを開くのに失敗することがあったのを直しました。× ボタンで終了するかどうかを選べるようにしました。</td></tr>
+        <tr><td>1.2.0</td><td>タスクトレイにしまえるようにしました。グループの並べ替え、ページをまたぐ移動、グループの書き出し・読み込みを足しました。</td></tr>
+        <tr><td>1.1.0</td><td>ウィンドウの大きさを覚えるようにしました。パスの種類ごとのアイコンと、色の選択を足しました。</td></tr>
+        <tr><td>1.0.0</td><td>C# 版から Python に作り直しました。ページ、ボタンの数を自由に増やせる画面、ドラッグでのボタン追加を足しました。</td></tr>
+      </table>
+      <p class="small"><a href="https://github.com/yossy-craft/tablauncherx2/releases">これまでの版（GitHub）</a></p>
+    </main>
+
+    <footer class="site">© yossy-craft</footer>
+  </div>
+</body>
+</html>
