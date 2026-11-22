@@ -9,33 +9,64 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="site"><a href="/">yossy-craft</a></header>
+  <header class="site-header">
+    <p class="tagline">Yossy です。仕事や家で使う Windows のちょっとした道具を自分用に作っていて、ほかの人にも使ってもらえそうなものをここに置いています。どれも無料です。</p>
+    <a class="logo" href="/"><img src="/assets/img/logo.png" alt="Windows の自作ツール yossy-craft by Yossy" width="347" height="82"></a>
+  </header>
+  <nav class="global-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/screenpen/">ScreenPen</a></li>
+      <li><a href="/tablauncherx2/">TabLauncherX2</a></li>
+    </ul>
+  </nav>
 
-    <main>
-      <h1>yossy-craft</h1>
-      <p>Yossy です。仕事や家で使う Windows のちょっとした道具を、自分用に作っています。そのうち、ほかの人にも使ってもらえそうなものをここに置いています。どれも無料です。</p>
-
-      <h2>ツール</h2>
-      <ul class="tools">
-        <li>
-          <img src="/assets/img/screenpen/logo.png" alt="" width="44" height="44">
-          <div>
-            <a class="name" href="/screenpen/">ScreenPen</a><span class="ver">0.9.0</span>
-            <p>画面の上にペンで書き込めるツール。画面共有やプレゼンで、指し示したいところに丸を付けたりするのに使っています。</p>
+  <div class="content">
+    <main class="main">
+      <div class="cards">
+        <a class="card" href="/screenpen/">
+          <div class="card-thumb">
+            <img src="/assets/img/screenpen/eyecatch.jpg" alt="" width="1280" height="720">
+            <span class="card-label">画面ツール</span>
           </div>
-        </li>
-        <li>
-          <img src="/assets/img/tablauncherx2/logo.png" alt="" width="44" height="44">
-          <div>
-            <a class="name" href="/tablauncherx2/">TabLauncherX2</a><span class="ver">1.3.1</span>
-            <p>よく開くフォルダやサイトをボタンにしておけるランチャー。フォルダはエクスプローラーの新しいタブで開きます。</p>
+          <h2 class="card-title">ScreenPen</h2>
+          <p class="card-snippet">画面の上にペンで書き込めるツール。画面共有やプレゼンで、指し示したいところに丸を付けたりするのに使っています。</p>
+          <div class="card-meta">バージョン 0.9.0 ・ 2026.11.22</div>
+        </a>
+        <a class="card" href="/tablauncherx2/">
+          <div class="card-thumb">
+            <img src="/assets/img/tablauncherx2/eyecatch.jpg" alt="" width="1280" height="720">
+            <span class="card-label">ランチャー</span>
           </div>
-        </li>
-      </ul>
+          <h2 class="card-title">TabLauncherX2</h2>
+          <p class="card-snippet">よく開くフォルダやサイトをボタンにしておけるランチャー。フォルダはエクスプローラーの新しいタブで開きます。</p>
+          <div class="card-meta">バージョン 1.3.1 ・ 2026.07.22</div>
+        </a>
+      </div>
     </main>
 
-    <footer class="site">© yossy-craft</footer>
+    <aside class="sidebar">
+      <section class="widget">
+        <h3 class="widget-title">ツール</h3>
+        <ul class="widget-list">
+          <li><a href="/screenpen/"><span class="name"><img src="/assets/img/screenpen/logo.png" alt="" width="20" height="20">ScreenPen</span><span class="ver">0.9.0</span></a></li>
+          <li><a href="/tablauncherx2/"><span class="name"><img src="/assets/img/tablauncherx2/logo.png" alt="" width="20" height="20">TabLauncherX2</span><span class="ver">1.3.1</span></a></li>
+        </ul>
+      </section>
+      <section class="widget">
+        <h3 class="widget-title">このサイトについて</h3>
+        <p>ツールはどれも無料で、インストールせずに使えます。ダウンロードするファイルは GitHub に置いています。</p>
+      </section>
+      <section class="widget">
+        <h3 class="widget-title">更新情報</h3>
+        <ul class="widget-list">
+          <li><span class="date">2026.11.22</span>ScreenPen 0.9.0 を公開しました</li>
+          <li><span class="date">2026.11.22</span>TabLauncherX2 1.3.1 を載せました</li>
+        </ul>
+      </section>
+    </aside>
   </div>
+
+  <footer class="site-footer">© yossy-craft</footer>
 </body>
 </html>
