@@ -25,8 +25,8 @@
       </figure>
 
       <div class="download">
-        <a class="button" href="https://github.com/yossy-craft/screenpen/releases/latest/download/ScreenPen.exe">ScreenPen.exe をダウンロード</a>
-        <span class="sub">バージョン 0.8.0 ・ 約51MB ・ Windows 10 / 11（64ビット）</span>
+        <a class="button" href="https://github.com/yossy-craft/screenpen/releases/latest/download/ScreenPen.zip">ScreenPen.zip をダウンロード</a>
+        <span class="sub">バージョン 0.9.0 ・ 約54MB ・ Windows 10 / 11（64ビット）</span>
       </div>
 
       <h2>どんなツールか</h2>
@@ -45,10 +45,10 @@
 
       <h2>使い方</h2>
       <ol>
-        <li>ScreenPen.exe を、ScreenPen 用に作ったフォルダに置きます。設定ファイルが入る <code>savedata_user</code> フォルダが exe の隣にできるためです。インストールはいりません。</li>
-        <li>ダブルクリックで起動します。ツールバーと、タスクトレイのアイコンが出ます。</li>
+        <li>ダウンロードした zip を展開し、中の <code>screenpen-0.9.0</code> フォルダを、デスクトップやドキュメントなど好きな場所に置きます。インストールはいりません。設定ファイルがフォルダの中にできるので、Program Files の中は避けてください。</li>
+        <li>フォルダの中の <code>ScreenPen.exe</code> をダブルクリックで起動します。ツールバーと、タスクトレイのアイコンが出ます。<code>_internal</code> フォルダも動かすのに必要なので、exe だけ取り出さずフォルダごと使ってください。</li>
         <li>ペンのボタンを押すと書けるようになります。カーソルのボタンで元のマウス操作に戻ります。</li>
-        <li>終わるときは <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd> か、タスクトレイのアイコンを右クリックして終了します。</li>
+        <li>終わるときは、ツールバー左端のロゴを押して「終了」を選ぶか、タスクトレイのアイコンを右クリックして終了します。</li>
       </ol>
 
       <h2>はじめて起動するとき</h2>
@@ -57,31 +57,33 @@
       </div>
 
       <h2>ショートカットキー</h2>
-      <p>文字キー（<kbd>L</kbd> <kbd>A</kbd> <kbd>R</kbd> <kbd>E</kbd> <kbd>T</kbd> <kbd>W</kbd> <kbd>B</kbd>）を使うものは、ほかのアプリのショートカットとぶつからないよう、書き込みモードのときだけ効きます。</p>
+      <p>最初から使えるのは <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd>（書き込み と マウス操作 の切り替え）だけです。ほかのアプリのショートカットを横取りしないよう、ほかの操作には最初はキーを付けていません。</p>
+      <p>ほかの操作にもキーを付けたいときは、ScreenPen のフォルダにできる <code>savedata_user/config.json</code> をメモ帳で開き、使いたい操作の <code>""</code> の中にキーを書いて、ScreenPen を起動し直します。たとえばペンを <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd> にするなら <code>"tool_pen": "ctrl+alt+p"</code> です。</p>
       <table>
-        <tr><th>キー</th><th>動き</th></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd></td><td>書き込み と マウス操作 を切り替え</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd></td><td>ペン / 蛍光ペン / 消しゴム</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> / <kbd>A</kbd> / <kbd>R</kbd> / <kbd>E</kbd></td><td>直線 / 矢印 / 四角 / 楕円</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></td><td>文字</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>6</kbd> / <kbd>8</kbd></td><td>元に戻す / やり直し</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>7</kbd></td><td>全部消す</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd></td><td>書いたものを隠す / 見せる</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>]</kbd> / <kbd>[</kbd></td><td>線を太く / 細く（マウスのホイールでも変わります）</td></tr>
-        <tr><td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>〜<kbd>9</kbd></td><td>ツールバーに並んでいる9色から選ぶ</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd></td><td>ひとつ前の色に戻す</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> / <kbd>B</kbd></td><td>ペイントを白い紙 / 黒い紙で開く</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>PrintScreen</kbd></td><td>範囲を選んでスクリーンショット</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd></td><td>ツールバーを隠す / 見せる</td></tr>
-        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd></td><td>終了</td></tr>
+        <tr><th>名前</th><th>動き</th></tr>
+        <tr><td><code>toggle_draw_mode</code></td><td>書き込み と マウス操作 を切り替え（最初は <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd>）</td></tr>
+        <tr><td><code>tool_pen</code> / <code>tool_highlighter</code> / <code>tool_eraser</code></td><td>ペン / 蛍光ペン / 消しゴム</td></tr>
+        <tr><td><code>tool_line</code> / <code>tool_arrow</code> / <code>tool_rect</code> / <code>tool_ellipse</code></td><td>直線 / 矢印 / 四角 / 楕円</td></tr>
+        <tr><td><code>tool_text</code></td><td>文字</td></tr>
+        <tr><td><code>undo</code> / <code>redo</code></td><td>元に戻す / やり直し</td></tr>
+        <tr><td><code>clear_all</code></td><td>全部消す</td></tr>
+        <tr><td><code>toggle_ink</code></td><td>書いたものを隠す / 見せる</td></tr>
+        <tr><td><code>width_up</code> / <code>width_down</code></td><td>線を太く / 細く（マウスのホイールでも変わります）</td></tr>
+        <tr><td><code>quick_color_1</code>〜<code>quick_color_9</code></td><td>ツールバーに並んでいる9色から選ぶ（左から順に）</td></tr>
+        <tr><td><code>last_color</code></td><td>ひとつ前の色に戻す</td></tr>
+        <tr><td><code>whiteboard</code> / <code>blackboard</code></td><td>ペイントを白い紙 / 黒い紙で開く</td></tr>
+        <tr><td><code>save_screenshot</code></td><td>範囲を選んでスクリーンショット</td></tr>
+        <tr><td><code>toggle_toolbar</code></td><td>ツールバーを隠す / 見せる</td></tr>
+        <tr><td><code>quit_app</code></td><td>終了</td></tr>
       </table>
-      <p class="sub small">キーの組み合わせは <code>savedata_user/config.json</code> で変えられます。</p>
+      <p class="sub small">キーは <code>ctrl</code> / <code>alt</code> / <code>shift</code> と英数字などを <code>+</code> でつないで書きます。A〜Z の文字キーを使ったものは、ほかのアプリとぶつからないよう、書き込みモードのときだけ効きます。くわしくは zip の中の <code>README.txt</code> に書いてあります。</p>
 
       <h2>やめるとき</h2>
       <p>ScreenPen を置いたフォルダごと消せば終わりです。設定はそのフォルダの <code>savedata_user</code> にしか保存していません。撮ったスクリーンショットは、保存した場所に残ります。</p>
 
       <h2>更新履歴</h2>
       <table>
+        <tr><td>0.9.0（2026-11-22）</td><td>ダウンロードを zip にしました（フォルダごと使います）。最初から使えるショートカットキーを <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> だけにしました。使っているソフトウェアのライセンス文を同梱しました。</td></tr>
         <tr><td>0.8.0（2026-11-22）</td><td>はじめての公開版。</td></tr>
       </table>
       <p class="small"><a href="https://github.com/yossy-craft/screenpen/releases">これまでの版（GitHub）</a></p>
